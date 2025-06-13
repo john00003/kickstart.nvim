@@ -45,11 +45,13 @@ return {
   },
   {
     'stevearc/conform.nvim',
-    formatters_by_ft {
-      lua = { 'stylua' },
-      python = { 'isort', 'black' },
-      c = { 'clang_format' },
-      cpp = { 'clang_format' },
+    opts = {
+      formatters_by_ft = {
+        lua = { 'stylua' },
+        python = { 'isort', 'black' },
+        c = { 'clang_format' },
+        cpp = { 'clang_format' },
+      },
     },
   },
 }
